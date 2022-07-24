@@ -54,3 +54,9 @@ li{
 .RText{
   text-align: right;
 }
+
+input, button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
