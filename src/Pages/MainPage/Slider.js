@@ -1,10 +1,15 @@
 import React from 'react';
+import SlideCard from "./SlideCard";
 
 const Slider = () => {
     return (
-        <div>
-            <h1>Slider</h1>
-        </div>
+        <>
+            <section className="homeSlide contentWidth">
+                <div className="container">
+                    <SlideCard />
+                </div>
+            </section>
+        </>
     );
 };
 
