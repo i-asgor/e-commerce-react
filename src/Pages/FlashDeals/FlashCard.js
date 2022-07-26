@@ -49,16 +49,16 @@ const FlashCard = ({productItems}) => {
                                 <label>0</label> <br />
                                 <i className="fa-regular fa-heart"></i>
                             </div>
-                        </div>
-                        <div className="product-details">
-                            <h3>{productItems.name}</h3>
-                            <div className="rate">
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                            </div>
+
+                            <div className="product-details">
+                                <h3>{productItems.name}</h3>
+                                <div className="rate">
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                </div>
                             <div className="price">
                                 <h4>{productItems.price}.00</h4>
                                 <button>
@@ -66,6 +66,8 @@ const FlashCard = ({productItems}) => {
                                 </button>
                             </div>
                         </div>
+                        </div>
+                        
                     </div>
                     )
                 })}
