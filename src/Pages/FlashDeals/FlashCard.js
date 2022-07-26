@@ -2,13 +2,36 @@ import React from 'react';
 import Slider from "react-slick";
 
 
+const NextArrow = (props) =>{
+    const {onClick} = props;
+    return(
+        <div className="control-btn" onClick={onClick}>
+            <button className="next">
+                <i className="fa fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
+    )
+}
+const PrevArrow = (props) =>{
+    const {onClick} = props;
+    return(
+        <div className="control-btn" onClick={onClick}>
+            <button className="prev">
+                <i className="fa fa-long-arrow-alt-left"></i>
+            </button>
+        </div>
+    )
+}
+
 const FlashCard = ({productItems}) => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
       };
 
     return (
