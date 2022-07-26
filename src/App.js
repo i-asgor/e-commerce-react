@@ -11,11 +11,19 @@ function App() {
 
   const [cartItem, setCartItem] = useState([]);
 
+  const addToCart = (product) => {
+    const productExist = cartItem.find((item) => item.id === product.id )
+
+    if(productExist){
+      setCartItem(cartItem.map((item)=>(item.id === product.id ? {...productExist, qty: productExist.qty + 1}: item )))
+    }
+  }
+
   return (
     <>
       <Header/>
       <Routes>
-        <Route exact path='/' element={<Pages productItems={productItems}  />} />
+        <Route exact path='/' element={<Pages productItems={productItems} addToCart={addToCart}  />} />
       </Routes>
 
     </>
