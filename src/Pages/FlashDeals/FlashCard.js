@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 
 
@@ -24,6 +24,12 @@ const PrevArrow = (props) =>{
 }
 
 const FlashCard = ({productItems}) => {
+    const [count, setCount] = useState(0);
+    const increment = () => {
+        setCount(count +1)
+    }
+
+
     const settings = {
         dots: false,
         infinite: true,
@@ -46,8 +52,8 @@ const FlashCard = ({productItems}) => {
                                 <img src={productItems.cover} alt={productItems.name} />
                             </div>
                             <div className="product-like">
-                                <label>0</label> <br />
-                                <i className="fa-regular fa-heart"></i>
+                                <label>{count}</label> <br />
+                                <i className="fa-regular fa-heart" onClick={increment}></i>
                             </div>
 
                             <div className="product-details">
