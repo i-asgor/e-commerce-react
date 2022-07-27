@@ -29,3 +29,56 @@
     height: 100%;
     object-fit: contain;
 }
+
+.incCart {
+    background: none;
+    border: 1px solid rgb(3 0 71 / 9%);
+    color: #e94560;
+  }
+.incCart:hover {
+    background: #e94560;
+    color: #fff;
+  }
+  .desCart {
+    background: #f6f9fc;
+    color: #e94560;
+  }
+  .desCart:hover {
+    background: #e94560;
+    color: #fff;
+  }
+
+  .removeCart {
+    background: none;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .cartControl {
+    margin-top: 50px;
+  }
+
+  .removeCart {
+    background: none;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .cart-items h4 span {
+    color: #e94560;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+
+  .cartControl {
+    margin-top: 50px;
+  }
+  .cartControl button {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+  }

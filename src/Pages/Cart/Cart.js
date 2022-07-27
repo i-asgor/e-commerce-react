@@ -37,7 +37,7 @@ const Cart = ({cartItem, addToCart,decreaseQty}) => {
                                             <button className="incCart" onClick={()=> addToCart(item)}>
                                                 <i className="fa fa-plus"></i>
                                             </button>
-                                            <button className="incCart" onClick={()=> decreaseQty(item)}>
+                                            <button className="desCart" onClick={()=> decreaseQty(item)}>
                                                 <i className="fa fa-minus"></i>
                                             </button>
                                         </div>
