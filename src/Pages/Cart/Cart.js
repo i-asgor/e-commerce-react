@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = ({cartItem, addToCart,decreaseQty}) => {
-    const totalPrice = cartItem.reduce((price, item) => price + item.qty + item.price,0)
+    const totalPrice = cartItem.reduce((price, item) => price + (item.qty * item.price),0)
 
     return (
         <>
@@ -24,7 +24,7 @@ const Cart = ({cartItem, addToCart,decreaseQty}) => {
                                         <h3>{item.name}</h3>
                                         <h4>
                                             {item.price}.00 * {item.qty}
-                                            <span>${productQty}.00</span>
+                                            <span> = ${productQty}.00</span>
                                         </h4>
                                     </div>
                                     <div className="cart-items-function">
