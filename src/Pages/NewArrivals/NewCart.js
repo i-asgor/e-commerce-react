@@ -18,14 +18,15 @@ const NewCart = () => {
             {
                 Ndata.map((value, index) => {
                     return (
-                        <div className="box" key={index}>
-                            <div className="img">
-                                <img src={value.cover} alt={value.name} />
+                        <>
+                            <div className="box product" key={index}>
+                                <div className="img">
+                                    <img src={value.cover} alt={value.name} width='100%'/>
+                                </div>
+                                <h4>{value.name}</h4>
+                                <span>{value.price}</span>
                             </div>
-                            <h4>{value.name}</h4>
-                            <span>{value.price}</span>
-
-                        </div>
+                        </>
                     )
                 })
             }
