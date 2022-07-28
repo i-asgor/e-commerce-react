@@ -256,3 +256,23 @@ input, button{
   color: #fff;
   margin: 10px;
 }
+
+/*               heading                 */
+
+.heading .heading-left i{
+  font-size: 30px;
+}
+
+.heading .heading-left h2{
+  font-size: 25px;
+  margin: 5px;
+}
+
+.heading .heading-right,
+.heading .heading-right i{
+  text-align: right;
+  color: grey;
+}
+
+
+/*               heading                 */
