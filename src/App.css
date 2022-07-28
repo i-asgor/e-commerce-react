@@ -155,19 +155,19 @@ input, button{
   font-size: 17px;
 }
 
-.product-details .rate i{
+.product .rate i{
   font-size: 15px;
   color: #ffcd4e;
   margin: 5px 5px 5px 0;
 }
 
-.product-details .price{
+.product .price{
   display: flex;
   justify-content: space-between;
   color: #e94560;
 }
 
-.product-details button{
+.price button{
   background: none;
   color: #e94560;
   font-size: 20px;
@@ -177,7 +177,7 @@ input, button{
   border-radius: 5px;
 }
 
-.product-details button:hover{
+.price button:hover{
   cursor: pointer;
   background: #e94560;
   color: #fff;
@@ -276,3 +276,13 @@ input, button{
 
 
 /*               heading                 */
+/* .grid{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 30px;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 10px;
+} */
