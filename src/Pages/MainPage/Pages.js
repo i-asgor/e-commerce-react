@@ -1,4 +1,5 @@
 import React from 'react';
+import Announcements from '../Announcements/Announcements';
 import Discount from '../Discount/Discount';
 import FlashDeals from '../FlashDeals/FlashDeals';
 import NewArrivals from '../NewArrivals/NewArrivals';
@@ -15,6 +16,7 @@ const Pages = ({productItems, cartItem, addToCart, shopItems}) => {
            <NewArrivals />
            <Discount />
            <Shop  shopItems={shopItems} addToCart={addToCart}/>
+           <Announcements />
         </>
     );
 };
