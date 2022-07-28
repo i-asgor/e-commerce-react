@@ -5,10 +5,13 @@ import Pages from './Pages/MainPage/Pages';
 import Data from './Pages/FlashDeals/Data';
 import { useState } from 'react';
 import Cart from './Pages/Cart/Cart';
+import ShopData from './Pages/Shop/ShopData';
 
 function App() {
 
-  const { productItems } = Data
+  const { productItems } = Data;
+
+  const { shopItems } = ShopData;
 
   const [cartItem, setCartItem] = useState([]);
 
@@ -35,7 +38,7 @@ function App() {
     <>
       <Header cartItem={cartItem}/>
       <Routes>
-        <Route exact path='/' element={<Pages productItems={productItems} addToCart={addToCart}  />} />
+        <Route exact path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />} />
         <Route exact path='/cart' element={<Cart cartItem={cartItem} addToCart={addToCart}  decreaseQty={decreaseQty} />} />
       </Routes>
 
