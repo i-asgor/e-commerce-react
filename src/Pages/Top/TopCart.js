@@ -1,14 +1,16 @@
 import React from 'react';
 import Tdata from './Tdata';
 import Slider from "react-slick";
+import './Top.css';
 
 const TopCart = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay:true,
       };
 
     return (
