@@ -5,6 +5,7 @@ import FlashDeals from '../FlashDeals/FlashDeals';
 import NewArrivals from '../NewArrivals/NewArrivals';
 import Shop from '../Shop/Shop';
 import TopCategory from '../Top/TopCategory';
+import Wrapper from '../Wrapper/Wrapper';
 import Home from './Home';
 
 const Pages = ({productItems, cartItem, addToCart, shopItems}) => {
@@ -17,6 +18,7 @@ const Pages = ({productItems, cartItem, addToCart, shopItems}) => {
            <Discount />
            <Shop  shopItems={shopItems} addToCart={addToCart}/>
            <Announcements />
+           <Wrapper />
         </>
     );
 };
