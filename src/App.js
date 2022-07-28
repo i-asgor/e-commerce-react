@@ -6,6 +6,7 @@ import Data from './Pages/FlashDeals/Data';
 import { useState } from 'react';
 import Cart from './Pages/Cart/Cart';
 import ShopData from './Pages/Shop/ShopData';
+import Footer from './Pages/Footer/Footer';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Route exact path='/' element={<Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />} />
         <Route exact path='/cart' element={<Cart cartItem={cartItem} addToCart={addToCart}  decreaseQty={decreaseQty} />} />
       </Routes>
+      <Footer />
 
     </>
   );
